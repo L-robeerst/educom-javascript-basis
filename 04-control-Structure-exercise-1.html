@@ -7,6 +7,9 @@
             const modulus = i % 2
             if ( modulus < 1 ) {
               sum = sum + i
+              console.log(`${i} is an even number`)
+            } else {
+                console.log(`${i} is an uneven number`)
             }
             if ( i == 100 ) {
                 console.log(`The vallue of all even numbers between 0 and 100 is: ${sum}`)
