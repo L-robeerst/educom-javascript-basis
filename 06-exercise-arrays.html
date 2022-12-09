@@ -1,0 +1,15 @@
+<script>
+/// Init with values
+    const shoppingCart = ["milk", "cheese", "eggs", "oranges"]
+    const prices = [2, 3, 1, 4]
+    let total = prices.reduce((a, b) => {
+        return a + b;
+    }) 
+    let tax = total/100*21
+    let totalInclTax =total+tax
+
+console.log(`${shoppingCart[0]}: ${prices[0]}, ${shoppingCart[1]}: ${prices[1]}, ${shoppingCart[2]}: ${prices[2]}, 
+${shoppingCart[3]}: ${prices[3]}. your total will be:${total}, which is ${totalInclTax} with tax.`);
+   
+    
+    </script>
